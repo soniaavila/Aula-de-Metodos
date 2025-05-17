@@ -12,13 +12,11 @@ sobre :
 
  # Aciona o fluxo de trabalho em eventos de solicitação push ou pull, mas apenas para o branch "principal"
 
- empurrar :
-
-   ramos : [ "principal" ]
-
- solicitação de pull :
-
-   ramos : [ "principal" ]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 
 
